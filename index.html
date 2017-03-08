@@ -10,7 +10,7 @@
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
-
+    <title>Ulama - Fabricantes de hules, expertos en fabricación de piezas especiales.</title>
   </head>
   <body>
     <div class="general-container">
@@ -24,14 +24,46 @@
           </ul>
         </div>
         <div class="logo">
-          <img src="img/logos/logo-circular-1-06.png" alt="Ulama Mexico">
-          <h2>Especialistas en fabricación de piezas extriudas o prensadas</h2>
+          <img src="img/logos/logo3.png" alt="Ulama Mexico">
+          <h2>Expertos en fabricación de piezas especiales extruidas y prensadas.</h2>
         </div>
-      </div class="header teal lighten-5">
+      </div>
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="img/slide/llantas.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>Calidad, Tecnología y aplicaciones</h3>
+              <h5 class="light grey-text text-lighten-3"></h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slide/engrane.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Somos expertos</h3>
+              <h5 class="light grey-text text-lighten-3">Fabricamos nuestros propios moldes. Pueden ser de compresión, transferencia o inyección.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slide/tiras.jpg"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Pregunte po lo que necesite</h3>
+              <h5 class="light grey-text text-lighten-3">Pregunte a nuestro departamento de ventas si lo que no encuentra o que busca, será un placer atenderle.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="img/slide/burbujas.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
       <div class="container">
 
         <div class="row">
-        <article class="col s12 l6">
+        <div class="col s12 l6">
           <h3>¿Quienes somos?</h3>
           <p>
             Expertos en la fabricación de productos vulcanizados
@@ -44,15 +76,17 @@
             precio y atención personalizada a nuestros
             clientes en todo el mundo.
           </p>
-        </article>
-        <article class="col s6">
+        </div>
+        <div class="col s12 l6">
             <img src="img/fabrica.jpg" alt="" class="responsive-img">
-        </article>
+        </div>
+      </div>
+      <div class="row">
         <article class="">
           <h3>Procesos</h3>
           <ul>
             <li>
-              <h4>EXTRUCCION</h4>
+              <h4>Extruccion</h4>
               <p>
                 Consiste en formar a través de un dado metálico
                 una forma determinada en forma continua y
@@ -62,7 +96,7 @@
               </p>
             </li>
             <li>
-              <h4>MOLDEO</h4>
+              <h4>Moldeo</h4>
               <p>
                 El proceso de moldeo de productos de hule se
                 realiza de diferentes formas dependiendo del
@@ -73,7 +107,7 @@
               </p>
             </li>
             <li>
-              <h4>MEZCLADO</h4>
+              <h4>Mezclado</h4>
               <p>
                 Mezclado de Hule , Acelerado de la mezcla y
                 laminado.
@@ -110,7 +144,15 @@
         </article>
         <article class="">
           <h3>Aplicaciones</h3>
-
+          <ul>
+            <li>Industria minera</li>
+            <li>Petroquímica</li>
+            <li>Construcción</li>
+            <li>Automotriz</li>
+            <li>Eléctrica</li>
+            <li>Agraría alimenticia</li>
+            <li>Farmacéutica</li>
+          </ul>
         </article>
       </div>
 
@@ -149,5 +191,20 @@
   </body>
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-smoove/0.2.9/jquery.smoove.min.js"></script>
+  <script>
+    // Attach Smoove to elements and set default options
+    $(".foo, .bar").smoove({
+      offset  : '15%',
+      // moveX is overridden to -200px for ".bar" object
+      moveX   : '100px',
+      moveY   : '100px',
+    });
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.slider').slider();
+  });
 
+</script>
 </html>
