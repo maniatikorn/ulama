@@ -64,7 +64,37 @@ nav
 
 .menu
 	display: inline-block;
-	/*width: 250px*/
+	width: 250px
 
 .grad
 	background-color: #e0f2f1
+
+@media screen and (max-width: 1024px)
+	.header
+		padding: 0 0
+		text-align: center;
+	.logo
+		top 80px
+
+	.menu
+		width: 100%
+		padding: 0
+
+	.menu
+		ul li
+			display: inline;
+
+@media screen and (max-width: 768px)
+	.menu
+		 display: none;
+	.logo
+		position: initial
+		width: 100%
+		h2
+			text-align: center;
+	.logo img
+		width: 100%
+		position: relative;
+
+	.header
+		text-align: center;
