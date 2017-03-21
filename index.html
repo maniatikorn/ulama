@@ -243,25 +243,25 @@
 
         <div class="col s12 l6">
           <p class="center">O si prefiere que lo contactemos</p>
-          <form class="" action="index.html" method="post">
+          <form class="" action="php/contacto.php" method="post">
             <div class="input-field">
               <i class="material-icons prefix">account_circle</i>
-              <input placeholder="Placeholder" id="icon_prefix" type="text" class="validate">
-              <label for="icon_prefix">Nombres</label>
+              <input id="icon_prefix" type="text" name="nombre" class="validate" required>
+              <label for="icon_prefix">Su nombre</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix">email</i>
-              <input id="email" type="email" class="validate">
+              <input id="email" type="email" name="mail" class="validate" required="">
               <label for="email">Email</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix">perm_phone_msg</i>
-              <input type="tel" name="tel" value="" id="icon_telephone">
+              <input type="tel" name="tel" value="" name="telefono" id="icon_telephone">
               <label for="icon_telephone" >Teléfono</label>
             </div>
             <div class="input-field">
               <i class="material-icons prefix">textsms</i>
-              <textarea id="textarea1" class="materialize-textarea"></textarea>
+              <textarea id="textarea1" class="materialize-textarea" name="descripcion"></textarea>
               <label for="textarea1">Su mensaje</label>
             </div>
             <div class="input-field center">
